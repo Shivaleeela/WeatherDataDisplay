@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter city name"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/searchcity_et"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:gravity="center"
+        android:src="@drawable/ic_baseline_search_24"
+        android:id="@+id/searchbutton"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/weatherdetails_LL">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Description:"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/weatherdesc"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="temp"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints"
+            android:id="@+id/temp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wind"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints"
+            android:id="@+id/wind"
+            />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ground-level"-->
+<!--            android:layout_margin="10dp"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            android:id="@+id/gdlevel"-->
+<!--            android:Visibility="gone"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="sea-level"-->
+<!--            android:layout_margin="10dp"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            android:id="@+id/sealevel"-->
+<!--            android:Visibility="gone"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="humidity"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints"
+            android:id="@+id/humidity"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pressure"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints"
+            android:id="@+id/pressure"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
